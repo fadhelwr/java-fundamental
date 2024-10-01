@@ -91,5 +91,31 @@ public class Percabangan {
         System.out.println("Discount = "+discount*100+"%");
         System.out.println("Total bayar = Rp "+(totalAmount-totalAmount*discount));
 
+        // switch case
+        System.out.println("pilih menu: ");
+        int menu = scanner.nextInt();
+        switch (menu){
+            case 1:
+                System.out.println("Menu ke 1");
+                break;
+            case 2:
+                System.out.println("Menu ke 2");
+                break;
+            case 3:
+                System.out.println("Menu ke 3");
+                break;
+            case 4:
+                System.out.println("Menu ke 4");
+                break;
+            case 5:
+                System.out.println("Menu ke 5");
+                break;
+        }
+
+        // ternary
+        System.out.println("Masukkan nilai: ");
+        int nilai = scanner.nextInt();
+        String keterangan = nilai >= 75 ? "Lulus" : "Tidak Lulus";
+        System.out.println(keterangan);
     }
 }
