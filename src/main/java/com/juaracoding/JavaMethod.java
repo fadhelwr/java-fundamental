@@ -73,17 +73,19 @@ public class JavaMethod {
 
     // cari kata terpanjang
     // String[] cities = {"Jakarta", "Bandung", "Surabaya", "Kalimantan", "Bali", "Makassar"};
-    static void cariKataTerpanjang(String[] cities){
+    static void cariKataTerpanjang(String[] cities) {
         int kataTerpanjang = 0;
         int index = 0;
         String city = null;
         for (int i = 0; i < cities.length; i++) {
-            if (kataTerpanjang < cities[i].length()){ // 10 < 8
+            if (kataTerpanjang < cities[i].length()) { // 10 < 8
                 kataTerpanjang = cities[i].length();
                 index = i;
                 city = cities[i];
             }
         }
-        System.out.println("Kata terpanjang ada di index ke "+index+" yaitu "+city);
+        System.out.println("Kata terpanjang ada di index ke " + index + " yaitu " + city);
+
+
     }
 }
